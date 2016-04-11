@@ -16,14 +16,14 @@ import java.util.ArrayList;
  */
 public class BinarySearchTree<E extends Comparable<E>>
          extends BinaryTree<E>{
+    
     // Data Fields
-
     /** Return value from the public add method. */
     protected boolean addReturn;
     /** Return value from the public delete method. */
     protected E deleteReturn;
 
-    //Methods
+    // Methods
     /*<listing chapter="6" number="3">*/
     /**
      * Starter method find.

@@ -181,19 +181,6 @@ public class HuffmanTree implements Serializable {
         
         return encodedCodes;
     }
-   /************************************************************************/ 
-    /**
-    * Method to encode string message into Huffman encodes.
-    * @param message The input message as a String
-    * which is composed on the specified alphabet in the book
-    * @param huffmanTree It’s created huffman code for the alphabet
-    * @return The encoded message as a String zero and ones.
-    */
-    public String encode(String message, BinaryTree huffmanTree){
-        
-        return "";
-    }
-   /************************************************************************/ 
     /*</listing>*/
 
 // Insert solution to programming exercise 1, section 6, chapter 6 here
@@ -239,11 +226,66 @@ public class HuffmanTree implements Serializable {
         // Print huffman codes of the symbols
         String EncodedSymbolList = Htree.toString();
         
-        // Decode huffman codes to symbıls
+        // Decode huffman codes to symbols
         String code = "110000100111111100101000011";
         String decodedCode = Htree.decode(code);
         System.out.println("Code to Message : \n"+code+" : \t"+decodedCode);
+         // Build hufffman tree 
+        
+       BinaryTree<HuffData> tree =  new BinaryTree();
+       String message = "ercan";
+       String encodedMessage = Htree.encode(message, tree);
+       System.out.println("Message to code : \n"+message+" : \t"+encodedMessage);
 
     }
+    
+    /*****************************PART_1***************************************/ 
+    /**
+    * Method to encode string message into Huffman encodes.
+    * @param message The input message as a String
+    * which is composed on the specified alphabet in the book
+    * @param huffmanTree Itâ€™s created huffman code for the alphabet
+    * @return The encoded message as a String zero and ones.
+    */
+    public String encode(String message, BinaryTree<HuffData> huffmanTree) {
+
+        StringBuilder result = new StringBuilder();
+        huffmanTree = huffTree;
+
+        if (message.isEmpty()) {
+            return "Message is empty!";
+        }
+        for (int i = 0; i < message.length(); ++i) {
+            result.append(encode(message.charAt(i), huffmanTree, ""));
+        }
+        return result.toString();
+    }
+    /**
+     * Search for character and when found return coded string
+     * @param ch is the search character on huffman tree.
+     * @param huffmanTree is the builed huffman tree.
+     * @param code is the code when found ch will return.
+     * @return is the for ch code on huffmantree.
+     */
+    private String encode(char ch, BinaryTree<HuffData> huffmanTree, String code) {
+        String str = "";
+        /*when huffman last leaf, namely characters find.*/
+        if (huffmanTree.isLeaf()) {
+            /*if ch found, add code will return.*/
+            HuffData theData = huffmanTree.getData();
+            if (theData.getSymbol().compareTo(ch) == 0) {
+                str = code;
+            }
+        } else {
+            /*if we were not found on the left what we search  go else*/
+            str = encode(ch, huffmanTree.getLeftSubtree(), code + '0');
+            if (str.equals("")) {
+                str = encode(ch, huffmanTree.getRightSubtree(), code + '1');
+            }
+
+        }
+        return str;
+    }
+   /*******************************PART_1_END***********************************/ 
 }
 /*</listing>*/

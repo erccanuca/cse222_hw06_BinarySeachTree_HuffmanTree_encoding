@@ -4,9 +4,6 @@
  * and open the template in the editor.
  */
 package com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode;
-
-
-
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
@@ -15,11 +12,6 @@ import java.io.UnsupportedEncodingException;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.Map;
-import java.util.SortedMap;
-import java.util.TreeMap;
-import java.util.List;
-import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 

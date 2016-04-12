@@ -120,13 +120,7 @@ public class AscendinOrderTraversal<E extends Comparable<E>> implements Iterator
         /*Test for iterator Class*/
         while(itr.hasNext()){
             System.out.println(itr.next().toString());
-        }
-     
-
-        
-
-
-        
+        }  
     }
     
 }

@@ -66,7 +66,7 @@ public class HuffmanTree implements Serializable {
     /*<listing chapter="6" number="10">*/
     /**
      * Builds the Huffman tree using the given alphabet and weights.
-     * @post  huffTree contains a reference to the Huffman tree.
+     * post  huffTree contains a reference to the Huffman tree.
      * @param symbols An array of HuffData objects
      */
     public void buildTree(HuffData[] symbols) {
@@ -152,8 +152,8 @@ public class HuffmanTree implements Serializable {
     }
     
     /**
-     * Print codes and their wiegths as string
-     * @return 
+     * Print codes and their weights as string
+     * @return information about this class.
     */
     @Override
     public String toString(){
@@ -236,7 +236,7 @@ public class HuffmanTree implements Serializable {
     * Method to encode string message into Huffman encodes.
     * @param message The input message as a String
     * which is composed on the specified alphabet in the book
-    * @param huffmanTree Itâ€™s created huffman code for the alphabet
+    * @param huffmanTree It's created huffman code for the alphabet
     * @return The encoded message as a String zero and ones.
     */
     public String encode(String message, BinaryTree<HuffData> huffmanTree) {

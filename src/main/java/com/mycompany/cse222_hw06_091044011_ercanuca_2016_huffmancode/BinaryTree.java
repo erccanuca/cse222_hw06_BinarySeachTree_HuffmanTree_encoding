@@ -172,11 +172,11 @@ public class BinaryTree<E> implements Serializable {
     /*<listing chapter="6" number="2">*/
     /**
      * Method to read a binary tree.
-     * @pre The input consists of a preorder traversal
+     * pre The input consists of a preorder traversal
      *      of the binary tree. The line "null" indicates a null tree.
      * @param bR The input file
      * @return The binary tree
-     * @throws IOException If there is an input error
+     * throws IOException If there is an input error
      */
     public static BinaryTree<String> readBinaryTree(BufferedReader bR)
             throws IOException {

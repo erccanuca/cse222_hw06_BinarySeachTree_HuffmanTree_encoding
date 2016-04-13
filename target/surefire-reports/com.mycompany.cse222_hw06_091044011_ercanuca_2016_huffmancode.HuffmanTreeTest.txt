@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode.HuffmanTreeTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec

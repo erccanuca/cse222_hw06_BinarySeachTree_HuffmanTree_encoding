@@ -183,7 +183,7 @@ public class HuffmanTree implements Serializable {
         
         // Create symbol array
         HuffData[] symbols = {
-                            new HuffData(186, '_'),
+                            new HuffData(186, ' '),
                             new HuffData(103, 'e'),
                             new HuffData(80, 't'),
                             new HuffData(64, 'a'),
@@ -225,7 +225,7 @@ public class HuffmanTree implements Serializable {
          // Build hufffman tree 
         
        BinaryTree<HuffData> tree =  new BinaryTree();
-       String message = "ben_ercan_uca";
+       String message = "merhaba ben ercan uca";
        String encodedMessage = Htree.encode(message, tree);
        System.out.println("Message to code : \n"+message+" : \t"+encodedMessage);
 

@@ -1,0 +1,204 @@
+--------------ARRAYLIST_QUEUE_TEST------------------
+****************For 1 integer*******************
+**************Enqueu 1 element******************
+Took approximately 18566 ns
+**************Dequeu 1 element******************
+Took approximately 18112 ns
+****************End for 1 number*******************
+
+****************For 10 integer********************
+**************Enqueu 10 elements******************
+Took approximately 27169 ns
+**************Dequeu 10 elements******************
+Took approximately 11320 ns
+************End for 10 numbers**********************
+
+**************For 100 integer***********************
+***********Enqueu 100 elements**********************
+Took approximately 153505 ns
+***********Dequeu 100 elements**********************
+Took approximately 68828 ns
+**************End for 100 number********************
+
+***************For 1000 integer*********************
+**************Enqueu 1000 elements******************
+Took approximately 1336715 ms
+**************Dequeu 1000 elements******************
+Took approximately 950463 ns
+****************End for 1000 number*****************
+
+****************For 10000 integer*******************
+**************Enqueu 10000 elements*****************
+Took approximately 4 ms
+**************Dequeu 10000 elements*****************
+Took approximately 14 ms
+****************End for 10000 number****************
+
+****************For 100000 integer******************
+**************Enqueu 100000 elements****************
+Took approximately 21 ms
+**************Dequeu 100000 elements****************
+Took approximately 1923 ms
+****************End for 100000 number***************
+
+****************For 1000000 integer*****************
+**************Enqueu 1000000 elements***************
+Took approximately 265 ms
+**************Dequeu 1000000 elements***************
+Took approximately 274361 ms
+****************End for 1000000 number**************
+
+----------------END_ARRAYLIST_QUEUE_TEST------------
+--------------LINKEDLIST_QUEUE_TEST------------------
+****************For 1 integer*******************
+**************Enqueu 1 element******************
+Took approximately 20377 ns
+**************Dequeu 1 element******************
+Took approximately 26716 ns
+****************End for 1 number*******************
+
+****************For 10 integer********************
+**************Enqueu 10 elements******************
+Took approximately 6793 ns
+**************Dequeu 10 elements******************
+Took approximately 14943 ns
+************End for 10 numbers**********************
+
+**************For 100 integer***********************
+***********Enqueu 100 elements**********************
+Took approximately 62941 ns
+***********Dequeu 100 elements**********************
+Took approximately 64753 ns
+**************End for 100 number********************
+
+***************For 1000 integer*********************
+**************Enqueu 1000 elements******************
+Took approximately 573266 ms
+**************Dequeu 1000 elements******************
+Took approximately 499910 ns
+****************End for 1000 number*****************
+
+****************For 10000 integer*******************
+**************Enqueu 10000 elements*****************
+Took approximately 2 ms
+**************Dequeu 10000 elements*****************
+Took approximately 1 ms
+****************End for 10000 number****************
+
+****************For 100000 integer******************
+**************Enqueu 100000 elements****************
+Took approximately 15 ms
+**************Dequeu 100000 elements****************
+Took approximately 5 ms
+****************End for 100000 number***************
+
+****************For 1000000 integer*****************
+**************Enqueu 1000000 elements***************
+Took approximately 267 ms
+**************Dequeu 1000000 elements***************
+Took approximately 22 ms
+****************End for 1000000 number**************
+
+----------------END_LINKEDLIST_QUEUE_TEST------------
+--------------UNSORTED_VECTOR_QUEUE_TEST------------------
+****************For 1 integer*******************
+**************Enqueu 1 element******************
+Took approximately 13131 ns
+**************Dequeu 1 element******************
+Took approximately 12226 ns
+****************End for 1 number*******************
+
+****************For 10 integer********************
+**************Enqueu 10 elements******************
+Took approximately 8151 ns
+**************Dequeu 10 elements******************
+Took approximately 9510 ns
+************End for 10 numbers**********************
+
+**************For 100 integer***********************
+***********Enqueu 100 elements**********************
+Took approximately 81960 ns
+***********Dequeu 100 elements**********************
+Took approximately 57960 ns
+**************End for 100 number********************
+
+***************For 1000 integer*********************
+**************Enqueu 1000 elements******************
+Took approximately 662471 ms
+**************Dequeu 1000 elements******************
+Took approximately 935067 ns
+****************End for 1000 number*****************
+
+****************For 10000 integer*******************
+**************Enqueu 10000 elements*****************
+Took approximately 3 ms
+**************Dequeu 10000 elements*****************
+Took approximately 12 ms
+****************End for 10000 number****************
+
+****************For 100000 integer******************
+**************Enqueu 100000 elements****************
+Took approximately 15 ms
+**************Dequeu 100000 elements****************
+Took approximately 1286 ms
+****************End for 100000 number***************
+
+****************For 1000000 integer*****************
+**************Enqueu 1000000 elements***************
+Took approximately 171 ms
+**************Dequeu 1000000 elements***************
+Took approximately 261435 ms
+****************End for 1000000 number**************
+
+----------------END_UNSORTED_VECTOR_QUEUE_TEST------------
+---------BINARY_SEARCH_TREE_QUEUE_TEST------------------
+****************For 1 integer*******************
+**************Enqueu 1 element******************
+Took approximately 6792 ns
+**************Dequeu 1 element******************
+Took approximately 1358 ns
+****************End for 1 number*******************
+
+****************For 10 integer********************
+**************Enqueu 10 elements******************
+Took approximately 3169 ns
+**************Dequeu 10 elements******************
+Took approximately 2265 ns
+************End for 10 numbers**********************
+
+**************For 100 integer***********************
+***********Enqueu 100 elements**********************
+Took approximately 31697 ns
+***********Dequeu 100 elements**********************
+Took approximately 9056 ns
+**************End for 100 number********************
+
+***************For 1000 integer*********************
+**************Enqueu 1000 elements******************
+Took approximately 156675 ms
+**************Dequeu 1000 elements******************
+Took approximately 155316 ns
+****************End for 1000 number*****************
+
+****************For 10000 integer*******************
+**************Enqueu 10000 elements*****************
+Took approximately 1 ms
+**************Dequeu 10000 elements*****************
+Took approximately 10 ms
+****************End for 10000 number****************
+
+****************For 100000 integer******************
+**************Enqueu 100000 elements****************
+Took approximately 23 ms
+**************Dequeu 100000 elements****************
+Took approximately 1348 ms
+****************End for 100000 number***************
+
+****************For 1000000 integer*****************
+**************Enqueu 1000000 elements***************
+Took approximately 172 ms
+**************Dequeu 1000000 elements***************
+Took approximately 287336 ms
+****************End for 1000000 number**************
+
+----------END_BINARY_SEARCH_TREE_QUEUE_TEST---------

@@ -41,85 +41,82 @@ public class BinaryTreeTest {
     /**
      * Test of getLeftSubtree method, of class BinaryTree.
      */
-    @org.junit.Test
+    @Test
     public void testGetLeftSubtree() {
         System.out.println("getLeftSubtree");
         BinaryTree instance = new BinaryTree();
-        BinaryTree expResult = null;
+        BinaryTree expResult = instance;
         BinaryTree result = instance.getLeftSubtree();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult.getLeftSubtree(), result);
     }
 
     /**
      * Test of getRightSubtree method, of class BinaryTree.
      */
-    @org.junit.Test
+    @Test
     public void testGetRightSubtree() {
         System.out.println("getRightSubtree");
         BinaryTree instance = new BinaryTree();
-        BinaryTree expResult = null;
+        BinaryTree expResult = instance;
         BinaryTree result = instance.getRightSubtree();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult.getRightSubtree(), result);
     }
 
     /**
      * Test of getData method, of class BinaryTree.
      */
-    @org.junit.Test
+    @Test
     public void testGetData() {
         System.out.println("getData");
-        BinaryTree instance = new BinaryTree();
-        Object expResult = null;
+        BinaryTree instance = new BinaryTree(11, null, null);
+        Object expResult = 11;
         Object result = instance.getData();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
      * Test of isLeaf method, of class BinaryTree.
      */
-    @org.junit.Test
+    @Test
     public void testIsLeaf() {
         System.out.println("isLeaf");
-        BinaryTree instance = new BinaryTree();
-        boolean expResult = false;
-        boolean result = instance.isLeaf();
+        BinaryTree instance = new BinaryTree(11, 
+                                  new BinaryTree(12, null, null),
+                                  new BinaryTree(13, null, null));
+        
+        boolean expResult = instance.getLeftSubtree().isLeaf();
+        boolean result = instance.getRightSubtree().isLeaf();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
      * Test of toString method, of class BinaryTree.
      */
-    @org.junit.Test
+    @Test
     public void testToString() {
         System.out.println("toString");
-        BinaryTree instance = new BinaryTree();
-        String expResult = "";
+        BinaryTree instance = new BinaryTree(23,null,null);
+        String expResult = "23\n" +
+                           "  null\n" +
+                           "  null\n";
         String result = instance.toString();
+        System.out.println(result);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
      * Test of readBinaryTree method, of class BinaryTree.
      */
-    @org.junit.Test
+    @Test(expected = NullPointerException.class)
     public void testReadBinaryTree() throws Exception {
         System.out.println("readBinaryTree");
-        BufferedReader bR = null;
+        BufferedReader bR = new BufferedReader(null);
         BinaryTree<String> expResult = null;
         BinaryTree<String> result = BinaryTree.readBinaryTree(bR);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }

@@ -41,67 +41,63 @@ public class AscendinOrderTraversalTest {
     /**
      * Test of hasNext method, of class AscendinOrderTraversal.
      */
-    @org.junit.Test
+    @Test
     public void testHasNext() {
         System.out.println("hasNext");
-        AscendinOrderTraversal instance = null;
-        boolean expResult = false;
+        BinaryTree<Integer> tree = new BinaryTree<>(23,null,null);
+        AscendinOrderTraversal instance = new AscendinOrderTraversal(tree);
+        boolean expResult = true;
         boolean result = instance.hasNext();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
      * Test of next method, of class AscendinOrderTraversal.
      */
-    @org.junit.Test
+    @Test
     public void testNext() {
         System.out.println("next");
-        AscendinOrderTraversal instance = null;
-        Object expResult = null;
-        Object result = instance.next();
+        BinaryTree<Integer> tree = new BinaryTree<>(23,null,null);
+        AscendinOrderTraversal instance = new AscendinOrderTraversal(tree);
+        Integer expResult = new Integer(23);
+        Integer result = (Integer) instance.next();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
      * Test of remove method, of class AscendinOrderTraversal.
+     * throw UnsupportedOperationException
      */
-    @org.junit.Test
+    @Test(expected = UnsupportedOperationException.class)
     public void testRemove() {
         System.out.println("remove");
-        AscendinOrderTraversal instance = null;
+        BinaryTree<Integer> tree = new BinaryTree<>(23,null,null);
+        AscendinOrderTraversal instance = new AscendinOrderTraversal(tree);
         instance.remove();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
      * Test of iterator method, of class AscendinOrderTraversal.
      */
-    @org.junit.Test
+    @Test
     public void testIterator() {
         System.out.println("iterator");
-        AscendinOrderTraversal instance = null;
-        Iterator expResult = null;
-        Iterator result = instance.iterator();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        BinaryTree<Integer> tree = new BinaryTree<>(23,null,null);
+        AscendinOrderTraversal instance = new AscendinOrderTraversal(tree);
+        AscendinOrderTraversal instance2 = new AscendinOrderTraversal(tree);
+        Iterator<Integer> itr = instance.iterator();
+        Iterator<Integer> itr2 = instance.iterator();
+        assertEquals(itr, itr2);
     }
 
     /**
      * Test of main method, of class AscendinOrderTraversal.
      */
-    @org.junit.Test
+    @Test
     public void testMain() {
         System.out.println("main");
         String[] args = null;
         AscendinOrderTraversal.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

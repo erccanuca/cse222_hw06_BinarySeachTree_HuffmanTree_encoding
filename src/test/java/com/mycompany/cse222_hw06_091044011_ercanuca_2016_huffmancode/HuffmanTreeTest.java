@@ -5,6 +5,7 @@
  */
 package com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode;
 
+import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -18,7 +19,35 @@ import static org.junit.Assert.*;
  * @author ercan
  */
 public class HuffmanTreeTest {
-    
+    private HuffmanTree.HuffData[] symbols ={
+                            new HuffmanTree.HuffData(186, '_'),
+                            new HuffmanTree.HuffData(103, 'e'),
+                            new HuffmanTree.HuffData(80, 't'),
+                            new HuffmanTree.HuffData(64, 'a'),
+                            new HuffmanTree.HuffData(63, 'o'),
+                            new HuffmanTree.HuffData(57, 'i'),
+                            new HuffmanTree.HuffData(57, 'n'),
+                            new HuffmanTree.HuffData(51, 's'),
+                            new HuffmanTree.HuffData(48, 'r'),
+                            new HuffmanTree.HuffData(47, 'h'),
+                            new HuffmanTree.HuffData(32, 'd'),
+                            new HuffmanTree.HuffData(32, 'l'),
+                            new HuffmanTree.HuffData(23, 'u'),
+                            new HuffmanTree.HuffData(22, 'c'),
+                            new HuffmanTree.HuffData(21, 'f'),
+                            new HuffmanTree.HuffData(20, 'm'),
+                            new HuffmanTree.HuffData(18, 'w'),
+                            new HuffmanTree.HuffData(16, 'y'),
+                            new HuffmanTree.HuffData(15, 'g'),
+                            new HuffmanTree.HuffData(15, 'p'),
+                            new HuffmanTree.HuffData(13, 'b'),
+                            new HuffmanTree.HuffData(8, 'v'),
+                            new HuffmanTree.HuffData(5, 'k'),
+                            new HuffmanTree.HuffData(1, 'j'),
+                            new HuffmanTree.HuffData(1, 'q'),
+                            new HuffmanTree.HuffData(1, 'x'),
+                            new HuffmanTree.HuffData(1, 'z')
+    };
     public HuffmanTreeTest() {
     }
     
@@ -41,84 +70,74 @@ public class HuffmanTreeTest {
     /**
      * Test of buildTree method, of class HuffmanTree.
      */
-    @org.junit.Test
+    @Test
     public void testBuildTree() {
         System.out.println("buildTree");
-        HuffmanTree.HuffData[] symbols = null;
         HuffmanTree instance = new HuffmanTree();
         instance.buildTree(symbols);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
-    /**
-     * Test of printCode method, of class HuffmanTree.
-     */
-    @org.junit.Test
-    public void testPrintCode() {
-        System.out.println("printCode");
-        PrintStream out = null;
-        HuffmanTree instance = new HuffmanTree();
-        instance.printCode(out);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+ 
 
     /**
      * Test of decode method, of class HuffmanTree.
      */
-    @org.junit.Test
+    @Test
     public void testDecode() {
         System.out.println("decode");
-        String codedMessage = "";
+        String codedMessage = "010";
         HuffmanTree instance = new HuffmanTree();
-        String expResult = "";
+        instance.buildTree(symbols);
+        String expResult = "e";
         String result = instance.decode(codedMessage);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
      * Test of toString method, of class HuffmanTree.
      */
-    @org.junit.Test
+    @Test
     public void testToString() {
         System.out.println("toString");
+        HuffmanTree.HuffData[] symbols = {
+                            new HuffmanTree.HuffData(186, '_'),
+                            new HuffmanTree.HuffData(103, 'e'),
+                            new HuffmanTree.HuffData(80, 't')
+        };
         HuffmanTree instance = new HuffmanTree();
-        String expResult = "";
+        instance.buildTree(symbols);
+        HuffmanTree instance2 = new HuffmanTree();
+        instance2.buildTree(symbols);
         String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        String result2 = instance2.toString();
+        assertEquals(result2, result);
     }
 
     /**
      * Test of main method, of class HuffmanTree.
      */
-    @org.junit.Test
+    @Test
     public void testMain() throws Exception {
         System.out.println("main");
         String[] args = null;
         HuffmanTree.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
      * Test of encode method, of class HuffmanTree.
      */
-    @org.junit.Test
+    @Test
     public void testEncode() {
         System.out.println("encode");
-        String message = "";
-        BinaryTree<HuffmanTree.HuffData> huffmanTree = null;
+        String message = "e";
+        BinaryTree<HuffmanTree.HuffData> huffmanTree = new BinaryTree<>();
         HuffmanTree instance = new HuffmanTree();
-        String expResult = "";
+        instance.buildTree(symbols);
+        String expResult = "010";
         String result = instance.encode(message, huffmanTree);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
     
 }

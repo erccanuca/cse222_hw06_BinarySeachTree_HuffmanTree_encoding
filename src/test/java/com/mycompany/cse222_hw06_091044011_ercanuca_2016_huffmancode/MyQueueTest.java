@@ -40,74 +40,73 @@ public class MyQueueTest {
     /**
      * Test of dequeue method, of class MyQueue.
      */
-    @org.junit.Test
+    @Test
     public void testDequeue() {
         System.out.println("dequeue");
         MyQueue instance = new MyQueueImpl();
         Object expResult = null;
         Object result = instance.dequeue();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
      * Test of enqueue method, of class MyQueue.
      */
-    @org.junit.Test
+    @Test
     public void testEnqueue() {
         System.out.println("enqueue");
         Object element = null;
         MyQueue instance = new MyQueueImpl();
         instance.enqueue(element);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
      * Test of isEmpty method, of class MyQueue.
      */
-    @org.junit.Test
+    @Test
     public void testIsEmpty() {
         System.out.println("isEmpty");
         MyQueue instance = new MyQueueImpl();
         boolean expResult = false;
         boolean result = instance.isEmpty();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult, result); 
     }
 
     /**
      * Test of size method, of class MyQueue.
      */
-    @org.junit.Test
+    @Test
     public void testSize() {
         System.out.println("size");
         MyQueue instance = new MyQueueImpl();
         int expResult = 0;
         int result = instance.size();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
-    public class MyQueueImpl implements MyQueue {
+    public class MyQueueImpl<E> implements MyQueue<E> {
 
+        @Override
         public E dequeue() {
             return null;
         }
 
+        @Override
         public void enqueue(E element) {
+            return;
         }
 
+        @Override
         public boolean isEmpty() {
             return false;
         }
 
+        @Override
         public int size() {
             return 0;
         }
+
+       
     }
     
 }

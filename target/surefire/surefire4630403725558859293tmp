@@ -1,0 +1,22 @@
+#surefire
+#Wed Apr 13 23:39:32 EEST 2016
+testClassesDirectory=C\:\\Users\\ercan\\Documents\\NetBeansProjects\\CSE222_HW06_091044011_ercanuca_2016_HuffmanCode\\target\\test-classes
+forkMode=once
+classPathUrl.3=C\:\\Users\\ercan\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.1\\hamcrest-core-1.1.jar
+classPathUrl.2=C\:\\Users\\ercan\\.m2\\repository\\junit\\junit\\4.10\\junit-4.10.jar
+useManifestOnlyJar=true
+classPathUrl.1=C\:\\Users\\ercan\\Documents\\NetBeansProjects\\CSE222_HW06_091044011_ercanuca_2016_HuffmanCode\\target\\classes
+classPathUrl.0=C\:\\Users\\ercan\\Documents\\NetBeansProjects\\CSE222_HW06_091044011_ercanuca_2016_HuffmanCode\\target\\test-classes
+reportsDirectory=C\:\\Users\\ercan\\Documents\\NetBeansProjects\\CSE222_HW06_091044011_ercanuca_2016_HuffmanCode\\target\\surefire-reports
+providerConfiguration=org.apache.maven.surefire.junit4.JUnit4Provider
+testSuiteDefinitionTestSourceDirectory=C\:\\Users\\ercan\\Documents\\NetBeansProjects\\CSE222_HW06_091044011_ercanuca_2016_HuffmanCode\\src\\test\\java
+requestedTest=com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode.Part3_MainClassTestTest
+surefireClassPathUrl.1=C\:\\Users\\ercan\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-api\\2.10\\surefire-api-2.10.jar
+surefireClassPathUrl.0=C\:\\Users\\ercan\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-junit4\\2.10\\surefire-junit4-2.10.jar
+runOrder=filesystem
+useSystemClassLoader=true
+isTrimStackTrace=true
+enableAssertions=true
+failIfNoTests=true
+includes0=**/com/mycompany/cse222_hw06_091044011_ercanuca_2016_huffmancode/Part3_MainClassTestTest.java
+childDelegation=false

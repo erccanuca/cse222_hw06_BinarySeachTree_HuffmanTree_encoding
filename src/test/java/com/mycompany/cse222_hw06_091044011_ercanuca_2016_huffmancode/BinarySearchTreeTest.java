@@ -40,58 +40,52 @@ public class BinarySearchTreeTest {
     /**
      * Test of find method, of class BinarySearchTree.
      */
-    @org.junit.Test
+    @Test
     public void testFind() {
         System.out.println("find");
-        Object target = null;
+        Integer target = null;
         BinarySearchTree instance = new BinarySearchTree();
-        Object expResult = null;
+        Integer expResult = null;
         Object result = instance.find(target);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
      * Test of add method, of class BinarySearchTree.
      */
-    @org.junit.Test
+    @Test
     public void testAdd() {
         System.out.println("add");
-        Object item = null;
+        Integer item = 22;
         BinarySearchTree instance = new BinarySearchTree();
-        boolean expResult = false;
+        boolean expResult = true;
         boolean result = instance.add(item);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
      * Test of delete method, of class BinarySearchTree.
      */
-    @org.junit.Test
+    @Test
     public void testDelete() {
         System.out.println("delete");
-        Object target = null;
+        Integer target = 10;
         BinarySearchTree instance = new BinarySearchTree();
-        Object expResult = null;
-        Object result = instance.delete(target);
+        assertTrue(instance.add(target));
+        Integer expResult = 10;
+        Integer result = (Integer) instance.delete(target);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 
     /**
      * Test of main method, of class BinarySearchTree.
      */
-    @org.junit.Test
+    @Test
     public void testMain() {
         System.out.println("main");
         String[] args = null;
         BinarySearchTree.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

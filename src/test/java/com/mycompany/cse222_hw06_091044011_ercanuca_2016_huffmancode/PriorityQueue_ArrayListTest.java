@@ -5,6 +5,8 @@
  */
 package com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode;
 
+import java.util.Comparator;
+import java.util.PriorityQueue;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -40,56 +42,56 @@ public class PriorityQueue_ArrayListTest {
     /**
      * Test of dequeue method, of class PriorityQueue_ArrayList.
      */
-    @org.junit.Test
+    @Test( expected = NullPointerException.class)
     public void testDequeue() {
         System.out.println("dequeue");
         PriorityQueue_ArrayList instance = null;
         Object expResult = null;
         Object result = instance.dequeue();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
      * Test of enqueue method, of class PriorityQueue_ArrayList.
      */
-    @org.junit.Test
+    @Test
     public void testEnqueue() {
         System.out.println("enqueue");
-        Object element = null;
-        PriorityQueue_ArrayList instance = null;
+        Integer element = 77;
+        PriorityQueue queue = new PriorityQueue();
+        Comparator comp = null;
+        PriorityQueue_ArrayList instance = new PriorityQueue_ArrayList(queue, comp);
         instance.enqueue(element);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
      * Test of isEmpty method, of class PriorityQueue_ArrayList.
      */
-    @org.junit.Test
+    @Test
     public void testIsEmpty() {
         System.out.println("isEmpty");
-        PriorityQueue_ArrayList instance = null;
-        boolean expResult = false;
+        PriorityQueue queue = new PriorityQueue();
+        Comparator comp = null;
+        PriorityQueue_ArrayList instance = new PriorityQueue_ArrayList(queue, comp);
+        boolean expResult = true;
         boolean result = instance.isEmpty();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
      * Test of size method, of class PriorityQueue_ArrayList.
      */
-    @org.junit.Test
+    @Test
     public void testSize() {
         System.out.println("size");
-        PriorityQueue_ArrayList instance = null;
+        PriorityQueue queue = new PriorityQueue();
+        Comparator comp = null;
+        PriorityQueue_ArrayList instance = new PriorityQueue_ArrayList(queue, comp);
         int expResult = 0;
         int result = instance.size();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 
     /**
@@ -98,12 +100,15 @@ public class PriorityQueue_ArrayListTest {
     @org.junit.Test
     public void testToString() {
         System.out.println("toString");
-        PriorityQueue_ArrayList instance = null;
-        String expResult = "";
-        String result = instance.toString();
+        PriorityQueue queue = new PriorityQueue();
+        Comparator comp = null;
+        PriorityQueue_ArrayList instance = new PriorityQueue_ArrayList(queue, comp);
+        PriorityQueue queue2 = new PriorityQueue();
+        Comparator comp2 = null;
+        PriorityQueue_ArrayList instance2 = new PriorityQueue_ArrayList(queue, comp);
+        String expResult = instance.toString();
+        String result = instance2.toString();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

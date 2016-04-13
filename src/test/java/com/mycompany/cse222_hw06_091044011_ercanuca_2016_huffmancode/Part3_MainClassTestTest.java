@@ -47,8 +47,7 @@ public class Part3_MainClassTestTest {
         System.out.println("main");
         String[] args = null;
         Part3_MainClassTest.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+     
     }
 
     /**
@@ -60,8 +59,7 @@ public class Part3_MainClassTestTest {
         PriorityQueue<Integer> queue = null;
         Comparator<Integer> com = null;
         Part3_MainClassTest.test_ArrayList(queue, com);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+     
     }
 
     /**
@@ -73,8 +71,7 @@ public class Part3_MainClassTestTest {
         PriorityQueue<Integer> queue = null;
         Comparator<Integer> com = null;
         Part3_MainClassTest.test_LinkedList(queue, com);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -86,8 +83,7 @@ public class Part3_MainClassTestTest {
         PriorityQueue<Integer> queue = null;
         Comparator<Integer> com = null;
         Part3_MainClassTest.test_UnSortedVector(queue, com);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 
     /**

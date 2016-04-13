@@ -1,0 +1,8 @@
+#surefire
+#Wed Apr 13 23:39:32 EEST 2016
+maven.ext.class.path=C\:\\Users\\ercan\\AppData\\Roaming\\NetBeans\\8.0.2\\maven-nblib\\netbeans-eventspy.jar
+user.dir=C\:\\Users\\ercan\\Documents\\NetBeansProjects\\CSE222_HW06_091044011_ercanuca_2016_HuffmanCode
+file.encoding=UTF-8
+localRepository=C\:\\Users\\ercan\\.m2\\repository
+basedir=C\:\\Users\\ercan\\Documents\\NetBeansProjects\\CSE222_HW06_091044011_ercanuca_2016_HuffmanCode
+test=com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode.Part3_MainClassTestTest

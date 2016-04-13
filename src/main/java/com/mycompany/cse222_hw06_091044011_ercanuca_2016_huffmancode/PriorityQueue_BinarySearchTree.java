@@ -67,7 +67,7 @@ public class PriorityQueue_BinarySearchTree<E extends Comparable<E>> implements 
      */
     @Override
     public boolean isEmpty() {
-        return !myBinarySearchTreeQueue.isLeaf();
+        return size==0;
     }
     /**
      * Return number of my tree queue

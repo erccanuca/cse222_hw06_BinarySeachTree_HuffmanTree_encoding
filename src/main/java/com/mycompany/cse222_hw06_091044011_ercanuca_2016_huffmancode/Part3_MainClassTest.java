@@ -117,7 +117,7 @@ public class Part3_MainClassTest {
         }
         endTime = System.nanoTime();
         totalTime = endTime - startTime;
-        System.out.printf("Took approximately %d ms\n", totalTime);
+        System.out.printf("Took approximately %d ns\n", totalTime);
         System.out.println("**************Dequeu 1000 elements******************");
         rand = new Random();
         startTime = System.nanoTime();
@@ -284,7 +284,7 @@ public class Part3_MainClassTest {
         }
         endTime = System.nanoTime();
         totalTime = endTime - startTime;
-        System.out.printf("Took approximately %d ms\n", totalTime);
+        System.out.printf("Took approximately %d ns\n", totalTime);
         System.out.println("**************Dequeu 1000 elements******************");
         rand = new Random();
         startTime = System.nanoTime();
@@ -451,7 +451,7 @@ public class Part3_MainClassTest {
         }
         endTime = System.nanoTime();
         totalTime = endTime - startTime;
-        System.out.printf("Took approximately %d ms\n", totalTime);
+        System.out.printf("Took approximately %d ns\n", totalTime);
         System.out.println("**************Dequeu 1000 elements******************");
         rand = new Random();
         startTime = System.nanoTime();
@@ -618,7 +618,7 @@ public class Part3_MainClassTest {
         }
         endTime = System.nanoTime();
         totalTime = endTime - startTime;
-        System.out.printf("Took approximately %d ms\n", totalTime);
+        System.out.printf("Took approximately %d ns\n", totalTime);
         System.out.println("**************Dequeu 1000 elements******************");
         rand = new Random();
         startTime = System.nanoTime();

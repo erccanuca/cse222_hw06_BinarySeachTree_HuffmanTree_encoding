@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.139" errors="0" skipped="0" tests="5" name="com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode.HuffmanTreeTest">
+<testsuite failures="0" time="0.213" errors="0" skipped="0" tests="5" name="com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode.HuffmanTreeTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_80\jre\bin"/>
@@ -64,9 +64,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="0.009" classname="com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode.HuffmanTreeTest" name="testMain"/>
-  <testcase time="0" classname="com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode.HuffmanTreeTest" name="testEncode"/>
+  <testcase time="0.038" classname="com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode.HuffmanTreeTest" name="testMain"/>
   <testcase time="0" classname="com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode.HuffmanTreeTest" name="testBuildTree"/>
-  <testcase time="0" classname="com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode.HuffmanTreeTest" name="testDecode"/>
   <testcase time="0" classname="com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode.HuffmanTreeTest" name="testToString"/>
+  <testcase time="0.001" classname="com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode.HuffmanTreeTest" name="testDecode"/>
+  <testcase time="0" classname="com.mycompany.cse222_hw06_091044011_ercanuca_2016_huffmancode.HuffmanTreeTest" name="testEncode"/>
 </testsuite>
